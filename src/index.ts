@@ -7,10 +7,15 @@ count = 10
 //const's type is a literal
 const fname = "Medina"
 
+// type any - no need to give any parameters
 let testing;
 
+// primitive types- comes form language
 testing = "Medina"
 testing = 5
+
+// defining a pattern, anytime we type student code 
+// is expecting this things
 
 type Student = {
     fname: string
@@ -18,12 +23,15 @@ type Student = {
     grade: number
 }
 
+
 let student: Student = {
     fname: "Medina",
     lname: "Anderson",
     grade:12,
 }
 
+
+// reusability of functions
 function toString(student: Student): string {
     return JSON.stringify(student)
 }
@@ -40,7 +48,7 @@ function add(x: number, y: number): number {
 //Any & Void
 
 
-//Union
+//Union (like OR)
 type Status = "success" | "failure"
 type ServerResponse = Student | string
 
