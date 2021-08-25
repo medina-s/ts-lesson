@@ -1,9 +1,15 @@
 "use strict";
 // interface
-// getMessage
 class Mail {
     constructor(data) {
         this.data = data;
+        this._password = undefined;
+    }
+    set password(x) {
+        this._password = x;
+    }
+    get password() {
+        return this._password;
     }
     send() {
         let returnValue = "success";
